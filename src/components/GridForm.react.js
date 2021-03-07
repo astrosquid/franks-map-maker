@@ -17,20 +17,21 @@ type Props = {
   setImageUrl: (string) => void,
 };
 
-export default function GridForm({
-  numColumns,
-  setNumColumns,
-  numRows,
-  setNumRows,
-  squareSize,
-  setSquareSize,
-  leftOffset,
-  setLeftOffset,
-  topOffset,
-  setTopOffset,
-  imageUrl,
-  setImageUrl,
-}: Props): React.MixedElement {
+export default function GridForm(props: Props): React.MixedElement {
+  const {
+    numColumns,
+    setNumColumns,
+    numRows,
+    setNumRows,
+    squareSize,
+    setSquareSize,
+    leftOffset,
+    setLeftOffset,
+    topOffset,
+    setTopOffset,
+    imageUrl,
+    setImageUrl,
+  } = props;
   return (
     <div
       style={{
@@ -85,7 +86,7 @@ export default function GridForm({
       />
 
       <pre>
-        {JSON.stringify({ squareSize, leftOffset, topOffset }, null, 2)}
+        {JSON.stringify({ props }, null, 2)}
       </pre>
     </div>
   );
