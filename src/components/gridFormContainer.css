@@ -1,0 +1,5 @@
+.gridFormContainer {
+  display: 'flex';
+  flex-direction: 'vertical';
+  height: '200px'
+}

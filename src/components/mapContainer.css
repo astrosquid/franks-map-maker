@@ -1,0 +1,13 @@
+.map-container {
+  background-color: blueviolet;
+}
+
+.square-row {
+  display: 'flex';
+  flex-direction: row;
+}
+
+.map-square {
+  display: "inline-block";
+  border: 1px solid black;
+}
