@@ -85,9 +85,7 @@ export default function GridForm(props: Props): React.MixedElement {
         onChange={(e) => setImageUrl(e.target.value)}
       />
 
-      <pre>
-        {JSON.stringify({ props }, null, 2)}
-      </pre>
+      <pre>{JSON.stringify(props, null, 2)}</pre>
     </div>
   );
 }
